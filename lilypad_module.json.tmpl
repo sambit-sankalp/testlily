@@ -13,6 +13,7 @@
       "Docker": {
         "Entrypoint": [
           "/app"
+          {{if .file}}{{.file}}{{else}}"Pass me an input called Message, like lilypad run cowsay:v0.0.2 -i file=moo"{{end}}
         ],
         "Image": "sambitsankalp/bacalhumdemo@sha256:0922424f60001349c9525c8c324c2451b72ac3efd04d116935bcfae56e4527de"
       },
