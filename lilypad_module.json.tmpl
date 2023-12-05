@@ -12,11 +12,10 @@
       },
       "Docker": {
         "Entrypoint": [
-              "python", "./main.py","--i",".","--o","./outputs",
-                    "-i",
+              "python", "./model.py",
                     {{.file}}
         ],
-        "Image": "sambitsankalp/bacalhumdemo@sha256:0922424f60001349c9525c8c324c2451b72ac3efd04d116935bcfae56e4527de"
+        "Image": "sambitsankalp/bacalhumdemo@sha256:293f3280c9551cc917adc584e1509b4c88c3ddabb9e47590f7e4ee26f8914905"
       },
       "Engine": "Docker",
       "Network": {
