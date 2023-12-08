@@ -13,9 +13,14 @@
       "Docker": {
         "Entrypoint": [
               "python", "./model.py",
-                    {{.file}}
+                    {{.Address}}, 
+                    {{.AdjustedPower}}, 
+                    {{.WinCount}},
+                    {{.SectorTotal}},
+                    {{.SectorFaults}},
+                    {{.SectorRecoveries}}
         ],
-        "Image": "sambitsankalp/bacalhumdemo@sha256:ca190db3879a10006a79fbf963bd8059094a7a04502b85ac8fe59ceec1c48ad8"
+        "Image": "sambitsankalp/bacalhumdemo@sha256:c8d6553d4bf14997e1e92db0e99a3bd78206e2a883921213d11e0a92caec0f71"
       },
       "Engine": "Docker",
       "Network": {
